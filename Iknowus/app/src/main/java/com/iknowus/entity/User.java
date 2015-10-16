@@ -2,7 +2,7 @@ package com.iknowus.entity;
 
 import java.io.Serializable;
 
-/**
+/*******
  * Created by Jorge on 07/10/2015.
  */
 public class User implements Serializable{
