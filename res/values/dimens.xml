@@ -3,9 +3,26 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="login_layout_width">350dp</dimen>
+   	<dimen name="header">50dp</dimen>
+	<dimen name="buttons_bottom">45dp</dimen>
     
     	<!-- dimens flat -->
 	<dimen name="corner_radius">4dp</dimen>
     <dimen name="layer_padding">3dp</dimen>
+    
+    <!-- Texto -->
+	<dimen name="text_normal">13sp</dimen>
+	<dimen name="text_item">14sp</dimen>
+	<dimen name="text_big_normal">15sp</dimen>
+	<dimen name="textSubtitle">16sp</dimen> 
+	<dimen name="text_big">17sp</dimen>			   
+    <dimen name="textTitle">20sp</dimen>    
+    
+    <!-- Margenes -->
+    <dimen name="margin_left_menu">55dp</dimen>
+    <dimen name="margin_left_label_standart">10dp</dimen>
+    <dimen name="margin_floating_edit">10dp</dimen>
+    <dimen name="margin_standart_space">5dp</dimen>   
 
 </resources>

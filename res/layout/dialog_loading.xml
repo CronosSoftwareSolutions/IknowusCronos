@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gris_background" >
+
+    <RelativeLayout
+        android:id="@+id/rlDialogLoadingHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/primary_aplication" >
+
+        <ImageView
+            android:id="@+id/ivLoadingHeaderIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:adjustViewBounds="true"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_splash" />
+
+        <TextView
+            android:id="@+id/tvLoadingTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_standart_space"
+            android:layout_marginRight="@dimen/margin_standart_space"
+            android:layout_toRightOf="@+id/ivLoadingHeaderIcon"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textTitle" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlDialogLoadingHeader" >
+
+        <ProgressBar
+            android:id="@+id/pbloading"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:id="@+id/tvLoadingDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/pbloading"                        
+            android:layout_margin="8dp"
+            android:text=""
+            android:textColor="@color/primary_aplication"
+            android:textSize="@dimen/text_big" />
+    </RelativeLayout>
+
+</RelativeLayout>

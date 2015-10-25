@@ -5,4 +5,65 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
+        <!-- Hints -->
+	<string name="hint_write_email">Correo electronico</string>
+    <string name="hint_write_name">Nombre y apellidos</string>    
+    <string name="hint_write_consult">Escriba su comentario</string>
+    <string name="hint_write_search">Escriba su búsqueda</string>    
+    <string name="hint_write_user">Nombre de Usuario (*)</string>
+    <string name="hint_write_user_label">Nombre de Usuario</string>
+    <string name="hint_write_password_label">Contraseña</string>
+    <string name="hint_write_password">Contraseña (*)</string>
+    <string name="hint_repeat_password">Repita su Contraseña (*)</string>
+    <string name="hint_write_phone">Teléfono (*)</string>
+    <string name="hint_write_opc_email">Correo electronico (Opcional)</string>
+    <string name="hint_write_opc_whatsapp">Número de Whatsapp (Opcional)</string>
+    <string name="hint_write_opc_second_phone">Segundo teléfono(Opcional)</string>
+    <string name="hint_write_opc_phone">Teléfono (Opcional)</string>
+    <string name="hint_write_opc_email_label">Correo electronico</string>
+    <string name="hint_write_opc_whatsapp_label">Número de Whatsapp</string>
+    <string name="hint_write_opc_second_phone_label">Segundo teléfono</string>
+    <string name="hint_write_opc_phone_label">Teléfono</string>
+    <string name="hint_write_image_comment">Comentar esta imagen...</string>
+    
+      <!-- Botones -->
+    <string name="btn_accept">Aceptar</string>
+    <string name="btn_cancel">Cancelar</string>
+    <string name="btn_search">Buscar</string>
+    <string name="btn_map">Mapa</string>
+    <string name="btn_sort">Ordenar</string>
+    <string name="btn_Ok">Ok</string>
+    <string name="btn_save">Guardar</string>
+    <string name="btn_Start">Iniciar</string>
+    <string name="btn_Exit">Salir</string>
+    <string name="btn_yes">Si</string>
+    <string name="btn_no">No</string>
+    <string name="btn_retry">Reintentar</string>
+    <string name="btn_update">Actualizar</string>
+    <string name="btn_send">Enviar</string>
+    <string name="btn_enable">Habilitar</string>
+    <string name="btn_disable">Deshabilitar</string>
+    <string name="btn_check_all_options">Seleccionar Todos</string>
+    <string name="btn_register">Registrarme</string>
+    <string name="btn_not_register">Ingresar sin registrarse</string>
+    <string name="btn_start_registered">Ingresar con mi cuenta</string>
+    <string name="btn_login">Iniciar Sesión</string>
+    <string name="btn_comment">Comentario</string>
+    <string name="btn_segerence">Sugerencia</string>
+    <string name="btn_report_fail">Reportar Fallo</string>
+    <string name="btn_take_image">Imágen</string>
+    <string name="btn_take_photo">Fotografía</string>
+    <string name="btn_upload_entity">Guardar y publicar</string>
+    <string name="btn_entity_preview">Vista Previa</string>
+    <string name="btn_delete_image">Eliminar Imágen</string>
+    <string name="btn_image_principal">Imágen principal</string>
+    
+    
+        <!-- Strings ACRA -->
+    <string name="crash_toast_text">Lo sentimos ! Ocurrio un problema con Iknowus, por favor reportalo a los desarrolladores para que lo solucionen!</string>
+    <string name="crash_dialog_title">Iknowus tuvo un problema</string>
+    <string name="crash_dialog_text">Un error inesperado ocurrio forzando a la aplicación a detenerse. Por Favor ayudanos enviando los datos del error pulsando en Aceptar.</string>
+    <string name="crash_dialog_comment_prompt">Agrega tus comentarios acerca del problema:</string>
+    <string name="crash_dialog_ok_toast">Gracias por ayudarnos!</string>
+    <string name="crash_user_email_label">Si deseas ingresa tu correo para contactarte:</string>
 </resources>

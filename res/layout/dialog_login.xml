@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.cronossf.iknowus"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="@dimen/login_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_standart_space"
+        android:layout_marginLeft="@dimen/margin_standart_space"
+        android:layout_marginRight="@dimen/margin_standart_space"
+        android:orientation="vertical" >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_aplication"            
+            android:textSize="@dimen/textTitle"
+            android:text="Ingresar con mi cuenta"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="center_horizontal"/>
+         <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/secondary_aplication" />
+
+        <com.cronossf.iknowus.components.FloatingEditText
+            android:id="@+id/etLoginEmail"
+            style="@style/FloatingEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_write_user_label"
+            android:inputType="textPersonName"
+            android:lines="1"
+            android:maxLength="20"
+            android:textColor="@android:color/black"
+            app:floating_edit_text_error_color="@color/secondary_aplication"
+            app:floating_edit_text_highlighted_color="@color/primary_aplication" />
+
+        <com.cronossf.iknowus.components.FloatingEditText
+            android:id="@+id/etLoginPassword"
+            style="@style/FloatingEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_write_password_label"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:maxLength="20"
+            android:textColor="@android:color/black"
+            app:floating_edit_text_error_color="@color/secondary_aplication"
+            app:floating_edit_text_highlighted_color="@color/primary_aplication" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/header"
+            android:layout_margin="@dimen/margin_floating_edit"
+            android:background="@drawable/sepia_flat_selector"            
+            android:text="@string/btn_login"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textTitle" />
+    </LinearLayout>
+
+</RelativeLayout>
