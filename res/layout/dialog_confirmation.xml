@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:id="@+id/rlDialogConfirmationHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white" >
+
+        <TextView
+            android:id="@+id/tvConfirmationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@color/primary_aplication"
+            android:textSize="@dimen/textTitle" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/header"
+        android:background="@color/secondary_aplication" />
+
+    <TextView
+        android:id="@+id/tvConfirmationDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlDialogConfirmationHeader"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:text=""
+        android:textColor="@color/primary_aplication"
+        android:textSize="@dimen/text_big" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header"
+        android:layout_below="@+id/tvConfirmationDescription" >
+
+        <LinearLayout
+            android:id="@+id/llConfirmationButton"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/header"
+            android:background="@color/primary_aplication"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnConfirmationCancel"
+                style="@style/Button1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.5"
+                android:text="@string/btn_no" />
+
+            <Button
+                android:id="@+id/btnConfirmationPositive"
+                style="@style/Button1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.5"
+                android:text="@string/btn_yes" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/vSeparatorButtons"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"            
+            android:background="@android:color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

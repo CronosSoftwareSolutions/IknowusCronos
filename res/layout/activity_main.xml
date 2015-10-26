@@ -1,49 +1,97 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.cronossf.iknowus.ui.activity.MainActivity" >
+    tools:context="com.cronossf.iknowus.ui.activity.ActivityMain" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/header" >
 
-    <Button
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ProgressBar
+                    android:layout_width="@dimen/header"
+                    android:layout_height="@dimen/header"
+                    android:layout_centerInParent="true" />
+
+                <ListView
+                    android:id="@+id/lvPrincipal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </ListView>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyLeftMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@android:color/transparent"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlHeaderMenu"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/flat_selector"
-        android:text="Hola Mundo"
-        android:textColor="@android:color/white" />
+        android:layout_height="@dimen/header"
+        android:layout_alignParentTop="true"
+        android:background="@color/primary_aplication" >
 
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/flat_selector_orange"
-        android:text="Hola Mundo"
-        android:textColor="@android:color/white" />
+        <RelativeLayout
+            android:layout_width="@dimen/header"
+            android:layout_height="@dimen/header"
+            android:layout_alignParentLeft="true" >
 
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/sepia_flat_selector"
-        android:text="Hola Mundo"
-        android:textColor="@android:color/white" />
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/button1"
+                android:clickable="true"
+                android:onClick="onClickMenu" />
 
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/brown_flat_selector"
-        android:text="Hola Mundo"
-        android:textColor="@android:color/white" />
+            <ImageView
+                android:id="@+id/ivMenuIcon"
+                android:layout_width="35dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="start"
+                android:background="@drawable/drawer_selector"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
 
-</LinearLayout>
+        <ImageView
+            android:id="@+id/ivTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/header"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/header"
+            android:adjustViewBounds="true"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_splash" />
+
+        <TextView
+            android:id="@+id/tvMenuTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textTitle"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

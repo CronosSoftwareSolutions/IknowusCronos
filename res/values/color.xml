@@ -2,7 +2,9 @@
 <resources>
 
     <color name="primary_aplication">#81C784</color>
-    <color name="secondary_aplication">#2A97E2</color>                    
+    <color name="secondary_aplication">#2A97E2</color>
+    
+    <color name="primary_aplication_transparent">#5581C784</color>
 
     <!-- Text Color -->
     <color name="text_gray">#48555d</color>    

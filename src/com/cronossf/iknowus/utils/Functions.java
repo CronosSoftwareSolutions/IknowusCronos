@@ -36,9 +36,11 @@ import java.text.DecimalFormatSymbols;
 import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
+import java.util.TimeZone;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.io.File;
@@ -370,6 +372,35 @@ public class Functions {
 		return matcher.matches();
 
 	}
+	
+	public static String getMonth(Long millis) {
+		String months[] = {"ENERO", "FEBRERO", "MARZO", "ABRIL", "MAYO", "JUNIO", "JULIO", "AGOSTO", "SEPTIEMBRE", "OCTUBRE", "NOVIEMBRE", "DICIEMBRE"};
+		Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone(App.TIME_ZONE));
+		calendar.setTimeInMillis(millis);
+		Date date = calendar.getTime();
+		return months[date.getMonth()];
+	}	
+	
+	public static int getMonthInt(Long millis) {
+		Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone(App.TIME_ZONE));
+		calendar.setTimeInMillis(millis);
+		Date date = calendar.getTime();
+		return date.getMonth();
+	}	
+	
+	public static String getDay(Long millis) {		
+		Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone(App.TIME_ZONE));
+		calendar.setTimeInMillis(millis);		
+		return "" + calendar.get(Calendar.DAY_OF_MONTH); 
+	}	
+	
+	public static String getFormattedDate(Long millis) {		
+		Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone(App.TIME_ZONE));
+		calendar.setTimeInMillis(millis);	
+		SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy");
+		return format.format(calendar.getTime());  
+	}	
+	
 
 	/**
 	 * Get the current line number.

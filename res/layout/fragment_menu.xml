@@ -1,0 +1,314 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="1dp"
+        android:background="@color/gris_background" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/gris_background"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="130dp" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/secondary_aplication"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ivPhotoUser"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_perfil" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_left_label_standart"
+                    android:layout_marginRight="@dimen/margin_standart_space"
+                    android:layout_toRightOf="@+id/ivPhotoUser"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tvMenuNameUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nombre de Usuario"
+                        android:textColor="@color/secondary_aplication"
+                        android:textSize="@dimen/textTitle" />
+
+                    <TextView
+                        android:id="@+id/tvMenuCompany"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/textSubtitle"                        
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/tvMenuPlace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_item"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@color/secondary_aplication" />
+
+            <LinearLayout
+                android:id="@+id/lyItemMenuMyProfile"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/header"
+                android:background="@drawable/selector_item_blue"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:layout_width="@dimen/header"
+                    android:layout_height="@dimen/header"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_perfil"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tvMyProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="Perfil"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_big" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyItemMenuArticle"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/header"
+                android:background="@drawable/selector_item_blue"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/header"
+                    android:layout_height="@dimen/header"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_articulo"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="Articulos"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_big" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyItemMenuForum"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/header"
+                android:background="@drawable/selector_item_blue"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/header"
+                    android:layout_height="@dimen/header"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_foro"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="Foros"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_big" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyItemMenuFavorites"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/header"
+                android:background="@drawable/selector_item_blue"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/header"
+                    android:layout_height="@dimen/header"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_favorito"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="Favoritos"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_big" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyItemMenuArea"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/header"
+                android:background="@drawable/selector_item_blue"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/header"
+                    android:layout_height="@dimen/header"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_area"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="Areas"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_big" />
+            </LinearLayout>
+            
+             <LinearLayout
+                android:id="@+id/lyItemMenuNotifications"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/header"
+                android:background="@drawable/selector_item_blue"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/header"
+                    android:layout_height="@dimen/header"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_notification"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="Notificaciones"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_big" />
+            </LinearLayout>
+            
+
+            <LinearLayout
+                android:id="@+id/lyItemMenuCalendar"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/header"
+                android:background="@drawable/selector_item_blue"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:layout_width="@dimen/header"
+                    android:layout_height="@dimen/header"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_calendar"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tvMemuHelp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="Calendario"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_big" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyItemMenuPersons"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/header"
+                android:background="@drawable/selector_item_blue"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/header"
+                    android:layout_height="@dimen/header"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_seguir"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="Personas que sigues."
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_big" />
+            </LinearLayout>           
+
+            <LinearLayout
+                android:id="@+id/lyItemMenuCloseSession"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/header"
+                android:background="@drawable/selector_item_blue"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:layout_width="@dimen/header"
+                    android:layout_height="@dimen/header"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_cerrar_sesion"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="Cerrar sesión"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_big" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

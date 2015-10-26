@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp" >
+
+    <TextView
+        android:id="@+id/vtMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"        
+        android:text="MARZO"
+        android:textColor="@color/secondary_aplication"
+        android:textSize="@dimen/text_big"
+        android:textStyle="bold" 
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="5dp" >
+
+        <TextView
+            android:id="@+id/vtEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:text="Evento de novedades para todos es gratis"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_big_normal"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnDay"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/count_notification"
+            android:text="25"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textTitle"
+            android:textStyle="bold" />
+        
+        <View 
+            android:layout_width="fill_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/secondary_aplication"/>
+    </RelativeLayout>
+
+</RelativeLayout>

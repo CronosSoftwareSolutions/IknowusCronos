@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/rlDialogChangePriceHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Buscar"
+            android:textColor="@color/primary_aplication"
+            android:textSize="@dimen/textTitle" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lyContent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlDialogChangePriceHeader"   
+        android:background="@android:color/white"     
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:background="@color/secondary_aplication" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"            
+            android:orientation="horizontal" >
+
+            <com.cronossf.iknowus.components.FloatingEditText
+                android:id="@+id/etSearchMyPublications"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"                
+                android:layout_weight="38"
+                android:hint="@string/hint_write_search"
+                android:inputType="textShortMessage"
+                android:lines="1"
+                android:maxLength="40"
+                android:nextFocusDown="@+id/etEntityName"
+                android:textColor="@android:color/black"
+                style="@style/FloatingEditText"/>
+            
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/lyContent" >
+
+        <LinearLayout
+            android:id="@+id/llChangePriceButton"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/primary_aplication"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnSearchMyPubCancel"
+                style="@style/Button1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.5"
+                android:text="@string/btn_cancel" />
+
+            <Button
+                android:id="@+id/btnSearchMyPubSearch"
+                style="@style/Button1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.5"
+                android:text="@string/btn_search" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/vSeparatorButtons"
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="@dimen/margin_standart_space"
+            android:background="@android:color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

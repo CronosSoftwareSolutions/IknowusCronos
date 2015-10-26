@@ -31,6 +31,36 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int adUnitId=0x7f010001;
+        /**  Specifies whether or not to draw a circular border around the image. 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int border=0x7f010016;
+        /**  Specifies the color of the border draw around the image. (if enabled) 
+         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int border_color=0x7f010017;
+        /**  Makes the border this pixels wide. (if enabled) 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int border_width=0x7f010018;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -71,6 +101,10 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int cameraZoom=0x7f010007;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int circularImageViewStyle=0x7f01001e;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -140,6 +174,55 @@ containing a value of this type.
 </table>
          */
         public static final int mapType=0x7f010002;
+        /**  Specifies whether or not to draw a selector on this view upon touch events. 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int selector=0x7f010019;
+        /**  Specifies the color of the selector draw on top of the image upon touch events. (if enabled) 
+         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int selector_color=0x7f01001a;
+        /**  Specifies the color of the selector stroke drawn around the image upon touch events. Be sure to provide some opacity. (if enabled) 
+         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int selector_stroke_color=0x7f01001b;
+        /**  Makes the selector stroke drawn around the image upon touch events this pixels wide. (if enabled) 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int selector_stroke_width=0x7f01001c;
+        /**  Specifies whether or not to draw a shadow around your circular image. 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int shadow=0x7f01001d;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -209,18 +292,18 @@ containing a value of this type.
         public static final int circular_progress_indeterminate=0x7f080000;
     }
     public static final class color {
-        public static final int card_background=0x7f04000e;
-        public static final int card_detailing=0x7f040011;
-        public static final int card_shadow_1=0x7f04000f;
-        public static final int card_shadow_2=0x7f040010;
-        public static final int checkbox_checked_color=0x7f040019;
-        public static final int checkbox_color=0x7f040018;
-        public static final int checkbox_mark_color=0x7f04001a;
-        public static final int circle_button_color=0x7f04001b;
-        public static final int circle_button_shadow_color=0x7f04001c;
+        public static final int card_background=0x7f04000f;
+        public static final int card_detailing=0x7f040012;
+        public static final int card_shadow_1=0x7f040010;
+        public static final int card_shadow_2=0x7f040011;
+        public static final int checkbox_checked_color=0x7f04001a;
+        public static final int checkbox_color=0x7f040019;
+        public static final int checkbox_mark_color=0x7f04001b;
+        public static final int circle_button_color=0x7f04001c;
+        public static final int circle_button_shadow_color=0x7f04001d;
         /**  CircularProgress Default 
          */
-        public static final int circular_progress_color=0x7f040020;
+        public static final int circular_progress_color=0x7f040021;
         public static final int common_action_bar_splitter=0x7f040009;
         /**  Sign-in Button Colors 
          */
@@ -233,40 +316,41 @@ containing a value of this type.
         public static final int common_signin_btn_light_text_disabled=0x7f040006;
         public static final int common_signin_btn_light_text_focused=0x7f040007;
         public static final int common_signin_btn_light_text_pressed=0x7f040005;
-        public static final int common_signin_btn_text_dark=0x7f04002a;
-        public static final int common_signin_btn_text_light=0x7f04002b;
+        public static final int common_signin_btn_text_dark=0x7f04002b;
+        public static final int common_signin_btn_text_light=0x7f04002c;
         /**  FloatingEditText Default 
          */
-        public static final int floating_edit_text_color=0x7f040022;
-        public static final int floating_edit_text_error_color=0x7f040024;
-        public static final int floating_edit_text_highlighted_color=0x7f040023;
-        public static final int gris_background=0x7f04000d;
+        public static final int floating_edit_text_color=0x7f040023;
+        public static final int floating_edit_text_error_color=0x7f040025;
+        public static final int floating_edit_text_highlighted_color=0x7f040024;
+        public static final int gris_background=0x7f04000e;
         /**  LinearProgress Default 
          */
-        public static final int linear_progress_color=0x7f040021;
-        public static final int paper_button_color=0x7f04001e;
-        public static final int paper_button_shadow_color=0x7f04001f;
-        public static final int paper_text_color=0x7f04001d;
+        public static final int linear_progress_color=0x7f040022;
+        public static final int paper_button_color=0x7f04001f;
+        public static final int paper_button_shadow_color=0x7f040020;
+        public static final int paper_text_color=0x7f04001e;
         public static final int primary_aplication=0x7f04000a;
-        public static final int radio_checked_color=0x7f040017;
-        public static final int radio_color=0x7f040016;
+        public static final int primary_aplication_transparent=0x7f04000c;
+        public static final int radio_checked_color=0x7f040018;
+        public static final int radio_color=0x7f040017;
         public static final int secondary_aplication=0x7f04000b;
         /**  Slider Default 
          */
-        public static final int slider_color=0x7f040025;
-        public static final int slider_ripple_color=0x7f040027;
-        public static final int slider_tint_color=0x7f040026;
-        public static final int switch_thumb_checked_color=0x7f040015;
-        public static final int switch_thumb_color=0x7f040014;
-        public static final int switch_track_checked_color=0x7f040013;
-        public static final int switch_track_color=0x7f040012;
+        public static final int slider_color=0x7f040026;
+        public static final int slider_ripple_color=0x7f040028;
+        public static final int slider_tint_color=0x7f040027;
+        public static final int switch_thumb_checked_color=0x7f040016;
+        public static final int switch_thumb_color=0x7f040015;
+        public static final int switch_track_checked_color=0x7f040014;
+        public static final int switch_track_color=0x7f040013;
         /**  Text Color 
          */
-        public static final int text_gray=0x7f04000c;
+        public static final int text_gray=0x7f04000d;
         /**  TrackSlider Default 
          */
-        public static final int track_slider_color=0x7f040028;
-        public static final int track_slider_tint_color=0x7f040029;
+        public static final int track_slider_color=0x7f040029;
+        public static final int track_slider_tint_color=0x7f04002a;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -355,68 +439,139 @@ containing a value of this type.
         public static final int brown_flat_selector=0x7f020000;
         public static final int brown_rect_normal=0x7f020001;
         public static final int brown_rect_pressed=0x7f020002;
-        public static final int card=0x7f020003;
-        public static final int common_signin_btn_icon_dark=0x7f020004;
-        public static final int common_signin_btn_icon_disabled_dark=0x7f020005;
-        public static final int common_signin_btn_icon_disabled_focus_dark=0x7f020006;
-        public static final int common_signin_btn_icon_disabled_focus_light=0x7f020007;
-        public static final int common_signin_btn_icon_disabled_light=0x7f020008;
-        public static final int common_signin_btn_icon_focus_dark=0x7f020009;
-        public static final int common_signin_btn_icon_focus_light=0x7f02000a;
-        public static final int common_signin_btn_icon_light=0x7f02000b;
-        public static final int common_signin_btn_icon_normal_dark=0x7f02000c;
-        public static final int common_signin_btn_icon_normal_light=0x7f02000d;
-        public static final int common_signin_btn_icon_pressed_dark=0x7f02000e;
-        public static final int common_signin_btn_icon_pressed_light=0x7f02000f;
-        public static final int common_signin_btn_text_dark=0x7f020010;
-        public static final int common_signin_btn_text_disabled_dark=0x7f020011;
-        public static final int common_signin_btn_text_disabled_focus_dark=0x7f020012;
-        public static final int common_signin_btn_text_disabled_focus_light=0x7f020013;
-        public static final int common_signin_btn_text_disabled_light=0x7f020014;
-        public static final int common_signin_btn_text_focus_dark=0x7f020015;
-        public static final int common_signin_btn_text_focus_light=0x7f020016;
-        public static final int common_signin_btn_text_light=0x7f020017;
-        public static final int common_signin_btn_text_normal_dark=0x7f020018;
-        public static final int common_signin_btn_text_normal_light=0x7f020019;
-        public static final int common_signin_btn_text_pressed_dark=0x7f02001a;
-        public static final int common_signin_btn_text_pressed_light=0x7f02001b;
-        public static final int flat_selector=0x7f02001c;
-        public static final int flat_selector_orange=0x7f02001d;
-        public static final int flat_selector_white=0x7f02001e;
-        public static final int ic_begin_session=0x7f02001f;
-        public static final int ic_launcher=0x7f020020;
-        public static final int ic_plusone_medium_off_client=0x7f020021;
-        public static final int ic_plusone_small_off_client=0x7f020022;
-        public static final int ic_plusone_standard_off_client=0x7f020023;
-        public static final int ic_plusone_tall_off_client=0x7f020024;
-        public static final int ic_splash=0x7f020025;
-        public static final int rect_normal=0x7f020026;
-        public static final int rect_normal_orange=0x7f020027;
-        public static final int rect_normal_white=0x7f020028;
-        public static final int rect_pressed=0x7f020029;
-        public static final int rect_pressed_orange=0x7f02002a;
-        public static final int rect_pressed_white=0x7f02002b;
-        public static final int sepia_flat_selector=0x7f02002c;
-        public static final int sepia_rect_normal=0x7f02002d;
-        public static final int sepia_rect_pressed=0x7f02002e;
+        public static final int button1=0x7f020003;
+        public static final int card=0x7f020004;
+        public static final int common_signin_btn_icon_dark=0x7f020005;
+        public static final int common_signin_btn_icon_disabled_dark=0x7f020006;
+        public static final int common_signin_btn_icon_disabled_focus_dark=0x7f020007;
+        public static final int common_signin_btn_icon_disabled_focus_light=0x7f020008;
+        public static final int common_signin_btn_icon_disabled_light=0x7f020009;
+        public static final int common_signin_btn_icon_focus_dark=0x7f02000a;
+        public static final int common_signin_btn_icon_focus_light=0x7f02000b;
+        public static final int common_signin_btn_icon_light=0x7f02000c;
+        public static final int common_signin_btn_icon_normal_dark=0x7f02000d;
+        public static final int common_signin_btn_icon_normal_light=0x7f02000e;
+        public static final int common_signin_btn_icon_pressed_dark=0x7f02000f;
+        public static final int common_signin_btn_icon_pressed_light=0x7f020010;
+        public static final int common_signin_btn_text_dark=0x7f020011;
+        public static final int common_signin_btn_text_disabled_dark=0x7f020012;
+        public static final int common_signin_btn_text_disabled_focus_dark=0x7f020013;
+        public static final int common_signin_btn_text_disabled_focus_light=0x7f020014;
+        public static final int common_signin_btn_text_disabled_light=0x7f020015;
+        public static final int common_signin_btn_text_focus_dark=0x7f020016;
+        public static final int common_signin_btn_text_focus_light=0x7f020017;
+        public static final int common_signin_btn_text_light=0x7f020018;
+        public static final int common_signin_btn_text_normal_dark=0x7f020019;
+        public static final int common_signin_btn_text_normal_light=0x7f02001a;
+        public static final int common_signin_btn_text_pressed_dark=0x7f02001b;
+        public static final int common_signin_btn_text_pressed_light=0x7f02001c;
+        public static final int count_notification=0x7f02001d;
+        public static final int drawer_selector=0x7f02001e;
+        public static final int flat_selector=0x7f02001f;
+        public static final int flat_selector_orange=0x7f020020;
+        public static final int flat_selector_white=0x7f020021;
+        public static final int ic_area=0x7f020022;
+        public static final int ic_articulo=0x7f020023;
+        public static final int ic_back=0x7f020024;
+        public static final int ic_begin_session=0x7f020025;
+        public static final int ic_calendar=0x7f020026;
+        public static final int ic_cerrar_sesion=0x7f020027;
+        public static final int ic_delete_white=0x7f020028;
+        public static final int ic_favorito=0x7f020029;
+        public static final int ic_foro=0x7f02002a;
+        public static final int ic_launcher=0x7f02002b;
+        public static final int ic_notification=0x7f02002c;
+        public static final int ic_perfil=0x7f02002d;
+        public static final int ic_plusone_medium_off_client=0x7f02002e;
+        public static final int ic_plusone_small_off_client=0x7f02002f;
+        public static final int ic_plusone_standard_off_client=0x7f020030;
+        public static final int ic_plusone_tall_off_client=0x7f020031;
+        public static final int ic_search_white=0x7f020032;
+        public static final int ic_seguir=0x7f020033;
+        public static final int ic_splash=0x7f020034;
+        public static final int rect_normal=0x7f020035;
+        public static final int rect_normal_orange=0x7f020036;
+        public static final int rect_normal_white=0x7f020037;
+        public static final int rect_pressed=0x7f020038;
+        public static final int rect_pressed_orange=0x7f020039;
+        public static final int rect_pressed_white=0x7f02003a;
+        public static final int selector_item_blue=0x7f02003b;
+        public static final int sepia_flat_selector=0x7f02003c;
+        public static final int sepia_rect_normal=0x7f02003d;
+        public static final int sepia_rect_pressed=0x7f02003e;
     }
     public static final class id {
-        public static final int action_settings=0x7f0b000f;
-        public static final int btnLogin=0x7f0b000e;
-        public static final int etLoginEmail=0x7f0b000c;
-        public static final int etLoginPassword=0x7f0b000d;
+        public static final int action_settings=0x7f0b0046;
+        public static final int btnConfirmationCancel=0x7f0b001b;
+        public static final int btnConfirmationPositive=0x7f0b001c;
+        public static final int btnDay=0x7f0b0042;
+        public static final int btnFavoriteForum=0x7f0b0045;
+        public static final int btnLogin=0x7f0b0025;
+        public static final int btnSearchMyPubCancel=0x7f0b002b;
+        public static final int btnSearchMyPubSearch=0x7f0b002c;
+        public static final int drawer_layout=0x7f0b0005;
+        public static final int etEntityName=0x7f0b0029;
+        public static final int etLoginEmail=0x7f0b0023;
+        public static final int etLoginPassword=0x7f0b0024;
+        public static final int etSearchMyPublications=0x7f0b0028;
         public static final int hybrid=0x7f0b0000;
-        public static final int imageButton1=0x7f0b0005;
-        public static final int imageView1=0x7f0b0006;
-        public static final int ivLoadingHeaderIcon=0x7f0b0008;
+        public static final int ibtnBackPublications=0x7f0b000d;
+        public static final int ibtnTextSearchDelete=0x7f0b0011;
+        public static final int ibtnTextSearchSearch=0x7f0b0012;
+        public static final int imageButton1=0x7f0b0015;
+        public static final int imageView1=0x7f0b0016;
+        public static final int ivLoadingHeaderIcon=0x7f0b001f;
+        public static final int ivMenuIcon=0x7f0b0009;
+        public static final int ivPhotoUser=0x7f0b002d;
+        public static final int ivPub=0x7f0b003c;
+        public static final int ivTitle=0x7f0b000a;
+        public static final int llChangePriceButton=0x7f0b002a;
+        public static final int llConfirmationButton=0x7f0b001a;
+        public static final int lvPrincipal=0x7f0b0006;
+        public static final int lvPublications=0x7f0b0013;
+        public static final int lyContent=0x7f0b0027;
+        public static final int lyItemMenuArea=0x7f0b0036;
+        public static final int lyItemMenuArticle=0x7f0b0033;
+        public static final int lyItemMenuCalendar=0x7f0b0038;
+        public static final int lyItemMenuCloseSession=0x7f0b003b;
+        public static final int lyItemMenuFavorites=0x7f0b0035;
+        public static final int lyItemMenuForum=0x7f0b0034;
+        public static final int lyItemMenuMyProfile=0x7f0b0031;
+        public static final int lyItemMenuNotifications=0x7f0b0037;
+        public static final int lyItemMenuPersons=0x7f0b003a;
+        public static final int lyLeftMenu=0x7f0b0007;
         public static final int none=0x7f0b0001;
         public static final int normal=0x7f0b0002;
-        public static final int pbloading=0x7f0b000a;
-        public static final int rlDialogLoadingHeader=0x7f0b0007;
+        public static final int pbPublications=0x7f0b0014;
+        public static final int pbloading=0x7f0b0021;
+        public static final int rlDialogChangePriceHeader=0x7f0b0026;
+        public static final int rlDialogConfirmationHeader=0x7f0b0017;
+        public static final int rlDialogLoadingHeader=0x7f0b001e;
+        public static final int rlHeaderMenu=0x7f0b0008;
         public static final int satellite=0x7f0b0003;
         public static final int terrain=0x7f0b0004;
-        public static final int tvLoadingDescription=0x7f0b000b;
-        public static final int tvLoadingTitle=0x7f0b0009;
+        public static final int tvConfirmationDescription=0x7f0b0019;
+        public static final int tvConfirmationTitle=0x7f0b0018;
+        public static final int tvDate=0x7f0b0044;
+        public static final int tvDesc=0x7f0b003f;
+        public static final int tvLoadingDescription=0x7f0b0022;
+        public static final int tvLoadingTitle=0x7f0b0020;
+        public static final int tvMemuHelp=0x7f0b0039;
+        public static final int tvMenuCompany=0x7f0b002f;
+        public static final int tvMenuNameUser=0x7f0b002e;
+        public static final int tvMenuPlace=0x7f0b0030;
+        public static final int tvMenuTitle=0x7f0b000b;
+        public static final int tvMyProfile=0x7f0b0032;
+        public static final int tvNameAut=0x7f0b003e;
+        public static final int tvTextCountResults=0x7f0b0010;
+        public static final int tvTextSearch=0x7f0b000f;
+        public static final int tvTitleForum=0x7f0b0043;
+        public static final int tvTitlePub=0x7f0b003d;
+        public static final int tvTitlePublications=0x7f0b000c;
+        public static final int tvWithoutPublications=0x7f0b000e;
+        public static final int vSeparatorButtons=0x7f0b001d;
+        public static final int vtEvent=0x7f0b0041;
+        public static final int vtMonth=0x7f0b0040;
     }
     public static final class integer {
         public static final int circular_progress_max=0x7f060001;
@@ -425,9 +580,16 @@ containing a value of this type.
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int activity_splash=0x7f030001;
-        public static final int dialog_loading=0x7f030002;
-        public static final int dialog_login=0x7f030003;
+        public static final int activity_publications=0x7f030001;
+        public static final int activity_splash=0x7f030002;
+        public static final int dialog_confirmation=0x7f030003;
+        public static final int dialog_loading=0x7f030004;
+        public static final int dialog_login=0x7f030005;
+        public static final int dialog_search_my_publications=0x7f030006;
+        public static final int fragment_menu=0x7f030007;
+        public static final int item_article=0x7f030008;
+        public static final int item_calendar=0x7f030009;
+        public static final int item_forum=0x7f03000a;
     }
     public static final class menu {
         public static final int main=0x7f0a0000;
@@ -596,11 +758,13 @@ containing a value of this type.
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
     
 
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
+
         
 
         Base application theme for API 11+. This theme completely replaces
@@ -619,7 +783,9 @@ containing a value of this type.
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f090001;
+        public static final int Button1=0x7f090003;
         public static final int FloatingEditText=0x7f090002;
+        public static final int headerButton=0x7f090004;
     }
     public static final class styleable {
         /** Attributes that can be used with a AdsAttrs.
@@ -674,6 +840,192 @@ containing a value of this type.
           @attr name com.cronossf.iknowus:adUnitId
         */
         public static final int AdsAttrs_adUnitId = 1;
+        /** Attributes that can be used with a CircularImageView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CircularImageView_border com.cronossf.iknowus:border}</code></td><td> Specifies whether or not to draw a circular border around the image.</td></tr>
+           <tr><td><code>{@link #CircularImageView_border_color com.cronossf.iknowus:border_color}</code></td><td> Specifies the color of the border draw around the image.</td></tr>
+           <tr><td><code>{@link #CircularImageView_border_width com.cronossf.iknowus:border_width}</code></td><td> Makes the border this pixels wide.</td></tr>
+           <tr><td><code>{@link #CircularImageView_selector com.cronossf.iknowus:selector}</code></td><td> Specifies whether or not to draw a selector on this view upon touch events.</td></tr>
+           <tr><td><code>{@link #CircularImageView_selector_color com.cronossf.iknowus:selector_color}</code></td><td> Specifies the color of the selector draw on top of the image upon touch events.</td></tr>
+           <tr><td><code>{@link #CircularImageView_selector_stroke_color com.cronossf.iknowus:selector_stroke_color}</code></td><td> Specifies the color of the selector stroke drawn around the image upon touch events.</td></tr>
+           <tr><td><code>{@link #CircularImageView_selector_stroke_width com.cronossf.iknowus:selector_stroke_width}</code></td><td> Makes the selector stroke drawn around the image upon touch events this pixels wide.</td></tr>
+           <tr><td><code>{@link #CircularImageView_shadow com.cronossf.iknowus:shadow}</code></td><td> Specifies whether or not to draw a shadow around your circular image.</td></tr>
+           </table>
+           @see #CircularImageView_border
+           @see #CircularImageView_border_color
+           @see #CircularImageView_border_width
+           @see #CircularImageView_selector
+           @see #CircularImageView_selector_color
+           @see #CircularImageView_selector_stroke_color
+           @see #CircularImageView_selector_stroke_width
+           @see #CircularImageView_shadow
+         */
+        public static final int[] CircularImageView = {
+            0x7f010016, 0x7f010017, 0x7f010018, 0x7f010019,
+            0x7f01001a, 0x7f01001b, 0x7f01001c, 0x7f01001d
+        };
+        /**
+          <p>
+          @attr description
+           Specifies whether or not to draw a circular border around the image. 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.cronossf.iknowus:border
+        */
+        public static final int CircularImageView_border = 0;
+        /**
+          <p>
+          @attr description
+           Specifies the color of the border draw around the image. (if enabled) 
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.cronossf.iknowus:border_color
+        */
+        public static final int CircularImageView_border_color = 1;
+        /**
+          <p>
+          @attr description
+           Makes the border this pixels wide. (if enabled) 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.cronossf.iknowus:border_width
+        */
+        public static final int CircularImageView_border_width = 2;
+        /**
+          <p>
+          @attr description
+           Specifies whether or not to draw a selector on this view upon touch events. 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.cronossf.iknowus:selector
+        */
+        public static final int CircularImageView_selector = 3;
+        /**
+          <p>
+          @attr description
+           Specifies the color of the selector draw on top of the image upon touch events. (if enabled) 
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.cronossf.iknowus:selector_color
+        */
+        public static final int CircularImageView_selector_color = 4;
+        /**
+          <p>
+          @attr description
+           Specifies the color of the selector stroke drawn around the image upon touch events. Be sure to provide some opacity. (if enabled) 
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.cronossf.iknowus:selector_stroke_color
+        */
+        public static final int CircularImageView_selector_stroke_color = 5;
+        /**
+          <p>
+          @attr description
+           Makes the selector stroke drawn around the image upon touch events this pixels wide. (if enabled) 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.cronossf.iknowus:selector_stroke_width
+        */
+        public static final int CircularImageView_selector_stroke_width = 6;
+        /**
+          <p>
+          @attr description
+           Specifies whether or not to draw a shadow around your circular image. 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.cronossf.iknowus:shadow
+        */
+        public static final int CircularImageView_shadow = 7;
+        /** Attributes that can be used with a CustomCircularImageViewTheme.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CustomCircularImageViewTheme_circularImageViewStyle com.cronossf.iknowus:circularImageViewStyle}</code></td><td></td></tr>
+           </table>
+           @see #CustomCircularImageViewTheme_circularImageViewStyle
+         */
+        public static final int[] CustomCircularImageViewTheme = {
+            0x7f01001e
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.cronossf.iknowus.R.attr#circularImageViewStyle}
+          attribute's value can be found in the {@link #CustomCircularImageViewTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.cronossf.iknowus:circularImageViewStyle
+        */
+        public static final int CustomCircularImageViewTheme_circularImageViewStyle = 0;
         /**  FloatingEditText Attribute 
            <p>Includes the following attributes:</p>
            <table>

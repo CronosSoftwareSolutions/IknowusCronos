@@ -5,6 +5,7 @@ import com.cronossf.iknowus.PreferenceManager;
 import com.cronossf.iknowus.R;
 import com.cronossf.iknowus.components.FloatingEditText;
 import com.cronossf.iknowus.task.TaskStartSession;
+import com.cronossf.iknowus.ui.activity.ActivityMain;
 import com.cronossf.iknowus.utils.Functions;
 
 import android.R.style;
@@ -70,7 +71,7 @@ public class DialogLogin extends Dialog {
 					public void onStartSessionCompleted(String result) {
 						if (result.equals("OK")) { 							
 							Toast.makeText(activity, "Sesion iniciada correctamente.", Toast.LENGTH_SHORT).show();
-//							activity.startActivity(new Intent(activity, ActivityListMap.class));
+							activity.startActivity(new Intent(activity, ActivityMain.class));
 							cancel();
 						} else if(result.equals("PASSWORD")){ 
 							etLoginEmail.setValidateResult(false, "Usuario o contraseña no validos.");

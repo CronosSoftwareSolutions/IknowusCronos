@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="5dp">
+
+        <com.cronossf.iknowus.components.CircularImageView 
+            android:id="@+id/ivPub"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"  
+            android:layout_centerVertical="true" 
+            android:layout_marginLeft="5dp"                  
+            android:background="@android:color/background_light"  />
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ivPub"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+            <TextView 
+                android:id="@+id/tvTitlePub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_big"
+                android:textColor="@color/secondary_aplication"
+                android:text="Titulo"
+                android:textStyle="bold"/>
+            <TextView 
+                android:id="@+id/tvNameAut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_big_normal"
+                android:textColor="@color/primary_aplication"
+                android:text="Juan Perez"
+                android:textStyle="bold"/>
+            <TextView 
+                android:id="@+id/tvDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_normal"
+                android:text="este es mi articulo"
+                android:textColor="@color/text_gray"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
