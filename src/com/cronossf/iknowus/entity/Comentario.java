@@ -12,6 +12,7 @@ public class Comentario {
 	private String imagen;
 	private Integer tipo;
 	private Integer estado;
+	private Long fecha;
 	
 	private Usuario usuario;
 	private List<Valoracion> lstValoraciones;
@@ -88,6 +89,12 @@ public class Comentario {
 	}
 	public void setLstComentarios(List<Comentario> lstComentarios) {
 		this.lstComentarios = lstComentarios;
+	}
+	public Long getFecha() {
+		return fecha;
+	}
+	public void setFecha(Long fecha) {
+		this.fecha = fecha;
 	}
 	
 	

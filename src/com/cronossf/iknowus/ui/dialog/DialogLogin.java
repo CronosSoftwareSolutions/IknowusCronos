@@ -73,6 +73,7 @@ public class DialogLogin extends Dialog {
 							Toast.makeText(activity, "Sesion iniciada correctamente.", Toast.LENGTH_SHORT).show();
 							activity.startActivity(new Intent(activity, ActivityMain.class));
 							cancel();
+							activity.finish();							
 						} else if(result.equals("PASSWORD")){ 
 							etLoginEmail.setValidateResult(false, "Usuario o contraseña no validos.");
 							etLoginPassword.setText(""); 

@@ -23,10 +23,12 @@ public class AdapterPublications extends BaseAdapter {
 	private List<Publicacion> lstPublicaciones;
 	private AQuery aq;
 	private Activity activity;
+	boolean principal;
 
-	public AdapterPublications(Activity activity, List<Publicacion> lstPublicaciones) {
+	public AdapterPublications(Activity activity, List<Publicacion> lstPublicaciones, boolean principal) {
 		this.activity = activity;
 		this.lstPublicaciones = lstPublicaciones;
+		this.principal = principal;
 		aq = new AQuery(activity.getApplicationContext());
 	}
 
@@ -81,10 +83,16 @@ public class AdapterPublications extends BaseAdapter {
 			TextView vtMonth = (TextView) convertView.findViewById(R.id.vtMonth);
 			TextView btnDay = (Button) convertView.findViewById(R.id.btnDay);
 			TextView vtEvent = (TextView) convertView.findViewById(R.id.vtEvent);
-			if (position == 0 || Functions.getMonthInt(lstPublicaciones.get(position - 1).getFecha_referencia()) != Functions.getMonthInt(publicacion.getFecha_referencia())) {
+			if(principal){
 				vtMonth.setVisibility(View.VISIBLE);
 				vtMonth.setText(Functions.getMonth(publicacion.getFecha_referencia()));
-			}			
+			}else{
+				if (position == 0 || Functions.getMonthInt(lstPublicaciones.get(position - 1).getFecha_referencia()) != Functions.getMonthInt(publicacion.getFecha_referencia())) {
+					vtMonth.setVisibility(View.VISIBLE);
+					vtMonth.setText(Functions.getMonth(publicacion.getFecha_referencia()));
+				}			
+			}
+			
 			btnDay.setText(Functions.getDay(publicacion.getFecha_referencia()));
 			vtEvent.setText(publicacion.getTitulo());
 			break;

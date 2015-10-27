@@ -18,7 +18,7 @@
 
     <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="70dp"
         android:layout_margin="5dp" >
 
         <TextView
@@ -44,7 +44,9 @@
             android:text="25"
             android:textColor="@android:color/white"
             android:textSize="@dimen/textTitle"
-            android:textStyle="bold" />
+            android:textStyle="bold" 
+            android:focusable="false"
+            android:clickable="false"/>
         
         <View 
             android:layout_width="fill_parent"

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_standart_space" >
+
+    <TextView
+        android:id="@+id/tvHelpDetailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Titulo de la seccion"
+        android:textColor="@color/primary_aplication"
+        android:textSize="@dimen/text_big" />
+
+    <TextView
+        android:id="@+id/tvHelpDetailDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Detalle que describe la seccion"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/text_big_normal" />
+
+    <ImageView
+        android:id="@+id/ivHelpDetailImage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"/>
+
+    <RelativeLayout
+        android:id="@+id/lyHelpDetailVideo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/ivHelpDetailVideo"
+            android:layout_width="@dimen/noti_detail_video_width"
+            android:layout_height="@dimen/noti_detail_video_height"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_video_play" />
+    </RelativeLayout>
+
+</LinearLayout>

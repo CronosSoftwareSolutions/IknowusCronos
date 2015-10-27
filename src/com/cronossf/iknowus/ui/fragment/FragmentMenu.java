@@ -9,6 +9,7 @@ import com.cronossf.iknowus.ui.activity.ActivityArea;
 import com.cronossf.iknowus.ui.activity.ActivityArticle;
 import com.cronossf.iknowus.ui.activity.ActivityCalendar;
 import com.cronossf.iknowus.ui.activity.ActivityFavorites;
+import com.cronossf.iknowus.ui.activity.ActivityForum;
 import com.cronossf.iknowus.ui.activity.ActivityMain;
 import com.cronossf.iknowus.ui.activity.ActivityPersons;
 import com.cronossf.iknowus.ui.activity.ActivityProfile;
@@ -96,7 +97,7 @@ public class FragmentMenu extends Fragment{
 			@Override
 			public void onClick(View v) {				
 				activity.onClickMenu(null);
-				activity.startActivity(new Intent(activity, ActivityProfile.class));			  			
+//				activity.startActivity(new Intent(activity, ActivityProfile.class));			  			
 			}
 		});
 		
@@ -114,7 +115,7 @@ public class FragmentMenu extends Fragment{
 			@Override
 			public void onClick(View v) {
 				activity.onClickMenu(null);
-				
+				activity.startActivity(new Intent(activity, ActivityForum.class));
 			}
 		});		
 		
@@ -122,14 +123,15 @@ public class FragmentMenu extends Fragment{
 			@Override
 			public void onClick(View v) {
 				activity.onClickMenu(null);
-				activity.startActivity(new Intent(activity, ActivityFavorites.class));
+//				activity.startActivity(new Intent(activity, ActivityFavorites.class));
 			}
 		});
 		
 		lyItemMenuArea.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				startActivity(new Intent(activity, ActivityArea.class)); 
+				activity.onClickMenu(null);
+//				startActivity(new Intent(activity, ActivityArea.class)); 
 			}
 		});
 
@@ -137,7 +139,7 @@ public class FragmentMenu extends Fragment{
 			@Override
 			public void onClick(View v) {
 				activity.onClickMenu(null);
-				activity.startActivity(new Intent(activity, ActivityNotFoundException.class));
+//				activity.startActivity(new Intent(activity, ActivityNotFoundException.class));
 			}
 		});				
 		
@@ -153,7 +155,7 @@ public class FragmentMenu extends Fragment{
 			@Override
 			public void onClick(View v) {
 				activity.onClickMenu(null);
-				startActivity(new Intent(activity, ActivityPersons.class)); 
+//				startActivity(new Intent(activity, ActivityPersons.class)); 
 			}
 		});
 		

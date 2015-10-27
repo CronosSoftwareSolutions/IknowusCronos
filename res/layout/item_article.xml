@@ -4,18 +4,17 @@
     android:layout_height="70dp" >
 
     <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_margin="5dp">
+        android:layout_width="fill_parent"        
+        android:layout_height="70dp"
+        android:layout_margin="4dp">
 
         <com.cronossf.iknowus.components.CircularImageView 
             android:id="@+id/ivPub"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:scaleType="centerCrop"  
-            android:layout_centerVertical="true" 
-            android:layout_marginLeft="5dp"                  
-            android:background="@android:color/background_light"  />
+            android:layout_alignParentTop="true" 
+            android:layout_marginLeft="5dp"  />
         <LinearLayout 
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -26,7 +25,7 @@
                 android:id="@+id/tvTitlePub"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_big"
+                android:textSize="@dimen/text_big_normal"
                 android:textColor="@color/secondary_aplication"
                 android:text="Titulo"
                 android:textStyle="bold"/>
@@ -34,7 +33,7 @@
                 android:id="@+id/tvNameAut"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_big_normal"
+                android:textSize="@dimen/text_normal"
                 android:textColor="@color/primary_aplication"
                 android:text="Juan Perez"
                 android:textStyle="bold"/>

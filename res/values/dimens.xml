@@ -24,5 +24,9 @@
     <dimen name="margin_left_label_standart">10dp</dimen>
     <dimen name="margin_floating_edit">10dp</dimen>
     <dimen name="margin_standart_space">5dp</dimen>   
+    
+    	<dimen name="noti_detail_image_height">400dp</dimen>
+	<dimen name="noti_detail_video_height">175dp</dimen>
+	<dimen name="noti_detail_video_width">250dp</dimen>
 
 </resources>

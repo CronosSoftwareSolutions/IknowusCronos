@@ -15,7 +15,7 @@ public class App {
 	public static final int NOTIFICATION_ID 	= 12345;
 
 	public static final String WS 		= "http://dualandroid.dualbiz.net:8780/WSIknowus/Services";
-	public static final String SERVER_IMAGEN 	= "http://dualandroid.dualbiz.net:8780/imagenIknowus/";
+	public static final String SERVER_IMAGEN 	= "http://dualandroid.dualbiz.net:8780/imageRecognitionFolder/";
 	
 	public static final int PLAY_SERVICES_RESOLUTION_REQUEST 	= 9000;	
 	public static final String PROPERTY_APP_VERSION 			= "appVersion";

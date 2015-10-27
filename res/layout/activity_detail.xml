@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.cronossf.iknowus"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/header" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_standart_space"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/ivTypoPublication"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/tvDetailTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"                   
+                    android:text="Titulo de la publicacion"
+                    android:textColor="@color/secondary_aplication"
+                    android:textSize="@dimen/textTitle"
+                    android:textStyle="bold" 
+                    android:layout_toRightOf="@+id/ivTypoPublication"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/ivDetailImage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/tvDetailDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Detalle que describe el contenido brevemente"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_big_normal"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/lyDetailPublication"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Comentarios"
+                android:textColor="@color/secondary_aplication"
+                android:textSize="@dimen/text_big"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/lyDetailComments"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnComment"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/sepia_flat_selector"
+            android:onClick="comentar"
+            android:text="Comentar"            
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_big"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnAsist"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/sepia_flat_selector"
+            android:onClick="asitir"
+            android:text="Asistire"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_big"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -7,6 +7,9 @@ public class Valoracion {
 	private Long id_comentario;
 	private Long fecha;
 	private Integer puntos;
+	
+	private Usuario usuario;
+	
 	public Long getId() {
 		return id;
 	}
@@ -42,6 +45,12 @@ public class Valoracion {
 	}
 	public void setPuntos(Integer puntos) {
 		this.puntos = puntos;
+	}
+	public Usuario getUsuario() {
+		return usuario;
+	}
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
 	}
 	
 }

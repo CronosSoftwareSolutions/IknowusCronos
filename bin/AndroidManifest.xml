@@ -47,6 +47,11 @@
             android:label="@string/app_name" >            
         </activity>
         <activity
+            android:name="com.cronossf.iknowus.ui.activity.ActivityDetail"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >            
+        </activity>
+        <activity
             android:name="com.cronossf.iknowus.ui.activity.ActivityProfile"
             android:screenOrientation="portrait"
             android:label="@string/app_name" >            
