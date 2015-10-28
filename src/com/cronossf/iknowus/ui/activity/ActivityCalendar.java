@@ -11,15 +11,19 @@ import com.cronossf.iknowus.task.TaskLoadLastPublications.OnComplete;
 import com.cronossf.iknowus.ui.adapter.AdapterPublications;
 import com.cronossf.iknowus.ui.dialog.DialogSearchMyPublication;
 import com.cronossf.iknowus.utils.OnSearch;
+import com.google.gson.Gson;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
+import android.widget.AdapterView;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.AdapterView.OnItemClickListener;
 
 public class ActivityCalendar extends Activity {
 	private List<Publicacion> lstPublications = new ArrayList<Publicacion>();
@@ -52,9 +56,19 @@ public class ActivityCalendar extends Activity {
 		setContentView(R.layout.activity_publications);
 		initComponents();
 		tvTitlePublications.setText("Calendario"); 
-		
+		lvPublications.setOnItemClickListener(onitem);
 		new TaskLoadLastPublications(this, lstPublications, "calendario", filter, onComplete).execute();
 	}
+	OnItemClickListener onitem = new OnItemClickListener() {
+		@Override
+		public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+			Publicacion p = (Publicacion) view.getTag();
+			Intent intent = new Intent(ActivityCalendar.this, ActivityDetail.class);
+			intent.putExtra("tipo", p.getTipo());
+			intent.putExtra("publicacion", new Gson().toJson(p)); 
+			startActivity(intent);
+		}
+	};
 
 	private void initComponents() {
 		tvTitlePublications = (TextView) findViewById(R.id.tvTitlePublications);

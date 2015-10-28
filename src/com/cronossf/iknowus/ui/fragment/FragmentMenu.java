@@ -89,7 +89,7 @@ public class FragmentMenu extends Fragment{
 
 		user = prefs.getUser();		
 		if(Functions.isValidString(user.getImagen())){
-			aq.id(ivPhotoUser).image(App.SERVER_IMAGEN + user.getImagen(), false, true, 500, 0);
+			aq.id(ivPhotoUser).image(App.SERVER_IMAGEN + user.getImagen(), true, true, 500, 0);
 		}	 
 		tvMenuNameUser.setText(user.getNombre()); 	
 	
